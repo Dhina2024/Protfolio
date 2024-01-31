@@ -486,11 +486,11 @@ h1
 .scroll i{
     font-size: 40px;
 }
-/* .scroll.active
+.scroll.active
 {
     opacity: 1;
     pointer-events: fill;
-} */
+}
 .load
 {
     height: 30px;
