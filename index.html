@@ -163,25 +163,26 @@ let by = () => {
 }
 
 
-    // window.addEventListener("scroll", () => {
-    //     if (window.scrollY > 100) {
-    //         icon.classList.add("active")
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 100) {
+            icon.classList.add("active")
 
-    //     }
-    //     else {
-    //         icon.classList.remove("active")
-    //     }
+        }
+        else {
+            icon.classList.remove("active")
+        }
 
-    // })
+    })
 function along() {
      window.scrollTo(0,0)
 }
-        document.addEventListener("DOMContentLoaded",()=>{
+        btn1.addEventListener("click",()=>{
            Notification.requestPermission().then((res)=>
            {
-            const notfi=new Notification("hell0",{
-                body:Math.random(),
+            const notfi=new Notification("Protfolio",{
+                body:"Welcome To My Protfolio",
                 icon:"_894574ea-2f06-43fc-83af-b49d8e22aba1.jpeg",
+                tag:"Welcome To My Protfolio"
 
             })
            })
