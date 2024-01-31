@@ -176,6 +176,17 @@ let by = () => {
 function along() {
      window.scrollTo(0,0)
 }
+        document.addEventListener("DOMContentLoaded",()=>{
+           Notification.requestPermission().then((res)=>
+           {
+            const notfi=new Notification("hell0",{
+                body:Math.random(),
+                icon:"_894574ea-2f06-43fc-83af-b49d8e22aba1.jpeg",
+
+            })
+           })
+        }
+        )
 
 
 </script>
