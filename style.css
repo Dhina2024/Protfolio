@@ -518,3 +518,37 @@ h1
         background-color: yellow;
     }
 }
+.links ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .links li{
+    display: inline-block;
+    margin: 0 15px;
+  }
+  .links a{
+    font-size: 22px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    position: relative;
+    padding: 4px 0;
+  }
+  .links a::before{
+    content: "";
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #3b03f1;
+    transition: 0.5s transform ease;
+    transform: scale3d(0,1,1);
+    transform-origin: 0 50%;
+  }
+  .links a:hover::before{
+    transform: scale3d(1,1,1);
+  }
